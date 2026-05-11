@@ -156,7 +156,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opa
 <body>
 
 <nav class="site-nav">
-  <a class="nav-logo" onclick="navigate('home')">Your<span class="leaf">&thinsp;Name</span></a>
+  <a class="nav-logo" onclick="navigate('home')">Andrew<span class="leaf">&thinsp;Hine</span></a>
   <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">menu</button>
   <div class="nav-links" id="navLinks"></div>
 </nav>
@@ -206,7 +206,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opa
       <p>Interested in working together or just want to say hello? Reach out through any of these channels.</p>
       <!-- ══════ EDIT YOUR CONTACT LINKS ══════ -->
       <div class="contact-links-list">
-        <a href="mailto:hine.a@northeastern.edu class="c-link">
+        <a href="mailto:hine.a@northeastern.edu" class="c-link">
           <div class="c-link-icon"><svg viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2l10 7L22 6zm0 2l-10 7L2 8v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8z"/></svg></div>
           <div class="c-link-text"><span class="c-link-label">Email</span><span class="c-link-value">hine.a@northeastern.edu</span></div>
         </a>
@@ -228,7 +228,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opa
       </div>
     </div>
   </div>
-  <div class="contact-copyright">&copy; 2026 Your Name. All rights reserved.</div>
+  <div class="contact-copyright">&copy; 2026 Andrew Hine. All rights reserved.</div>
 </footer>
 
 <script>
@@ -247,71 +247,91 @@ const CATEGORIES = [
 const PROJECTS = [
   {
     category: "software",
-    title: "Project Alpha",
-    description: "Describe what you built, the technical challenge, and the outcome. Replace this placeholder text with your own.",
-    date: "2026-03",
+    title: "The Knowledge Society — Student Innovator",
+    description: "Accepted into a competitive technology innovation program. Competed in hackathons and published two articles on Medium exploring emerging tech concepts.",
+    date: "2023-05",
     image: "",
-    tags: ["React", "Node.js", "PostgreSQL"],
+    tags: ["Innovation", "Writing", "Hackathons"],
     link: "",
     repo: ""
   },
   {
-    category: "software",
-    title: "Project Beta",
-    description: "Another software project. Cards are sorted newest-first automatically based on the date field.",
+    category: "systems",
+    title: "ECG / EKG Signal Acquisition",
+    description: "Designed and implemented analog and digital filters to assess real-time electrode data. Used op-amps, instrumental amplifiers, and voltage dividers for analog filtering, then leveraged MATLAB digital filters and threshold detection for heart rate calculation.",
+    date: "2024-11",
+    image: "",
+    tags: ["MATLAB", "Analog Circuits", "Signal Processing"],
+    link: "",
+    repo: ""
+  },
+  {
+    category: "systems",
+    title: "FPGA Spider Robot",
+    description: "Coded and interfaced an FPGA-based spider robot through an SSH terminal. Used C++ in Linux to drive an 18-stepper-motor walking robot and implemented a start sequence along with forward, backward, and turning motion.",
+    date: "2024-10",
+    image: "",
+    tags: ["FPGA", "C++", "Linux", "Verilog"],
+    link: "",
+    repo: ""
+  },
+  {
+    category: "systems",
+    title: "Interactive Powder Board",
+    description: "Planned, organized, and fabricated an interactive powder board for LABBB using wood, electronics, and other materials. Led a team of four as planning and communications director with our client liaison. Built around an Arduino-driven sensor array and programmable LEDs for the interactive client experience.",
+    date: "2024-12",
+    image: "",
+    tags: ["Arduino", "Team Lead", "LEDs", "Fabrication"],
+    link: "",
+    repo: ""
+  },
+  {
+    category: "systems",
+    title: "Clean Water Museum Exhibit",
+    description: "Designed an interactive children's game to educate visitors about clean water. Used Arduino, soldering, 3D printing, and laser cutting for the hardware and enclosure, and implemented a MATLAB GUI and display code alongside the physical build.",
+    date: "2024-05",
+    image: "",
+    tags: ["Arduino", "MATLAB", "3D Printing", "Laser Cutting"],
+    link: "",
+    repo: ""
+  },
+  {
+    category: "systems",
+    title: "Mitosis — NU Robotics Research",
+    description: "Electrical team member on Mitosis with the Northeastern Robotics Research Team. Contributed to hardware with Arduino, soldering, 3D printing, and laser cutting, and helped implement display and GUI code alongside the physical aspects.",
+    date: "2024-04",
+    image: "",
+    tags: ["Arduino", "Robotics", "Research"],
+    link: "",
+    repo: ""
+  },
+  {
+    category: "experiments",
+    title: "Accelerometer Replacement Testing Rig",
+    description: "Designed PCB hardware and MATLAB software for accelerometer bandwidth testing on a flagship monitoring device. Built a noise-minimizing test board for vibration-table characterization and wrote software to extract relevant data from the ADC during testing.",
     date: "2025-11",
     image: "",
-    tags: ["Python", "FastAPI", "Docker"],
-    link: "",
-    repo: ""
-  },
-  {
-    category: "software",
-    title: "Project Gamma",
-    description: "A third project in this category. Add as many as you like — the timeline grows to fit.",
-    date: "2025-06",
-    image: "",
-    tags: ["TypeScript", "AWS"],
-    link: "",
-    repo: ""
-  },
-  {
-    category: "systems",
-    title: "Infrastructure Overhaul",
-    description: "Describe a systems or infrastructure project. Migration, scaling, observability — whatever you worked on.",
-    date: "2026-01",
-    image: "",
-    tags: ["Terraform", "Kubernetes", "AWS"],
-    link: "",
-    repo: ""
-  },
-  {
-    category: "systems",
-    title: "CI/CD Pipeline",
-    description: "Describe another systems project. Talk about the architecture, tools, and results.",
-    date: "2025-08",
-    image: "",
-    tags: ["GitHub Actions", "Docker", "ArgoCD"],
+    tags: ["PCB Design", "MATLAB", "KiCAD", "Signal Processing"],
     link: "",
     repo: ""
   },
   {
     category: "experiments",
-    title: "Creative Experiment",
-    description: "A side project or prototype. Something fun, exploratory, or experimental.",
-    date: "2026-02",
+    title: "rEMG Noise Reduction Hardware",
+    description: "Helped design a revision to ZOLL's proprietary neonatal respiratory EMG signal acquisition board. Investigated sources of microvolt-level noise using an oscilloscope and soldered BNC connections to probe suspected parts.",
+    date: "2025-10",
     image: "",
-    tags: ["Rust", "WebAssembly"],
+    tags: ["Hardware Design", "Oscilloscope", "Soldering", "Biomedical"],
     link: "",
     repo: ""
   },
   {
     category: "experiments",
-    title: "Weekend Hack",
-    description: "Another experiment. The timeline view makes it easy to see your work chronologically.",
+    title: "AED Threshold Testing",
+    description: "Carried out threshold testing for a novel AED device with ZOLL's advanced development team, validating performance across the device's operating ranges.",
     date: "2025-09",
     image: "",
-    tags: ["Go", "SQLite"],
+    tags: ["Testing", "Biomedical", "AED"],
     link: "",
     repo: ""
   },
